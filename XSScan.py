@@ -8,15 +8,15 @@ from selenium.common.exceptions import TimeoutException
 
 def get_user_input():
     parse_object = optparse.OptionParser()
-    parse_object.add_option("-u","--url",dest="target_url",help="Enter target url address ex:https://example.com/?q=XSS")
+    parse_object.add_option("-u","--url",dest="target_url",help="Enter target url address ex:https://example.com/?q=XSS or http://example.com/?q=XSS")
 
     inputs = parse_object.parse_args()[0]
     if not inputs.target_url:
-        print("Enter target url address ex:https://example.com/?q=XSS")
+        print("Enter target url address ex:https://example.com/?q=XSS or http://example.com/?q=XSS")
     if  'https://' in inputs.target_url or  'http://' in inputs.target_url:
         print(Fore.RED +"[+][+][+]** starting.... **[+][+][+]")
     else:
-        print("enter target url ex:https://example.com/?q=XSS")
+        print("Enter target url ex:https://example.com/?q=XSS or http://example.com/?q=XSS")
     if not 'XSS' in inputs.target_url:
         print("Add XSS parameter to target url!")
 
